@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario, tablas y anclajes</title>
+
+    <link rel="stylesheet" href="./Assets/CSS/Htmlavanzado.css">
+</head>
+<body>
+
+    <a href="#formulario"><button>Este es el tema de formulario</button></a>
+    <a href="#primera"><button>Mi primera tabla</button></a>
+    <a href="#extincion"><button>Animales en peligro de extincion</button></a>
+    <a href="#maqueta"><button>Maqueta de pagina web</button></a>
+    <!-- Formulario
+    Nos sirve para recopilar informacion de nuestros usuarios
+    Atributos importantes:
+     Actions: es donde se va a enviar la informacion
+     Method: es el metodo de envio de la informacion
+Cuando trabajammos con botones dentro de los formularios, debemos usar input del tipo boton. Si trabajamos con botones fuera de el, usamos la etiqueta button.
+
+-->
+
+<h2 id="formulario">Este es mi formulario</h2>
+
+<div>
+<fieldset>
+    <label> Este es un boton simple </label>
+<form action="Datos.html"> <!--action="ruta o link"-->
+    <input type="button"> <!--Este es un boton-->
+    <br>
+    <br>
+    <input type="checkbox"> <!--Este es un checkbox-->
+    <br>
+    <br>
+    <label>Selecciona una fecha de reservacion</label>
+    <input type="date"> <!--Este es una fecha-->
+    <br>
+    <br>
+    <label> Agrega aqui tu correo electronico</label>
+    <input type="email" placeholder="ejemplo@correo.com"> <!--Este es un email-->
+    <br>
+    <br>
+    <input type="text"> <!--Este es un texto-->
+    <br>
+    <br>
+    <label for="password"></label>
+    <input type="password" name="password"> <!--Este es un texto de una sola linea-->
+    <br>
+    <br>
+    <label> Agrega tus comentarios aqui</label>
+    <textarea >
+
+    </textarea>
+    <br>
+    <br>
+    <input type="number"> <!--Este es un numero-->
+    <br>
+    <br>
+    <input type="file"> <!--Este sirve para subir una informacion -->
+    <br>
+    <br>
+    <input type="radio"> <!--Este es un radio-->
+    <br>
+    <br>
+    <input type="range" name="range"> <!--Este es un radio-->
+    <br>
+    <br>
+    <label>Inserte aqui su numero telefonico*</label>
+    <input type="tel" name="tel" placeholder="+(lada) (numero telefonico)" required> <!--Este es un telefono-->
+    <br>
+    <br>
+    <input type="time" name="name"> <!--Este es un tiempo-->
+    <br>
+    <br>
+    <input type="reset"> <!--Este es un boton de reseteo-->
+    <br>
+    <br>
+    <input type="submit"> <!--Este es un boton de envio-->
+    <br>
+    <br>
+
+ 
+
+
+    <label for="range">Este es un rango</label>
+    <label for="tel">Este es un telefono</label>
+    <label for="name"> Este es un nombre</label>
+
+
+    <br>
+    <br>
+    <br>
+    <label>Tacos</label>
+    <input type="checkbox" value="tacos"> <!--Este es un checkbox--> <br>
+    <label>Chilaquiles</label> 
+    <input type="checkbox" value="chilaquiles"> <!--Este es un checkbox--><br>
+    <label>Ensalada</label>
+    <input type="checkbox" value="ensalada"> <!--Este es un checkbox--> <br>
+</form>
+
+<p>Los campos con asterisoco (*) son obligatorios</p>
+</fieldset>
+</div>
+<h1>Aqui empieza el tema de las tablas</h1>
+
+<!-- 
+    Tablas
+
+    Las tablas son una forma de organizar los datos en una pagina web. PAra crear una tabla, se usa la etiqueta <table>. Para crear una fila, se usa la etiqueta <tr>. Para crear una celda, se usa la etiqueta <td>
+
+        -<table>: es la etiqueta que se usa para crear una tabla
+        -<td>: es la etiqueta que se usa para crear una celda. ES el contenedor mas peque;o de una tabla
+        -<tr>: es la etiqueta que se usa para crear una fila (table row)
+        -<th>: es la etiqueta que se usa para crear una celda de titulo (table header).
+-->
+<br> <br>
+
+<h2 id="primera"></h2>
+<table id="tablita">
+
+    <th></th>
+    <h2>Esta es mi primer tabla</h2>
+    <th>Gastos del 2020</th>
+    <th>Gastos del 2021</th>
+    <th>Gastos del 2022</th>
+
+    <tr> <!--Abri mi fila 1, para dar inicio a otra fila-->
+    <th></th>
+    <td>Enero</td>
+    <td>Febrero</td>
+    <td>Marzo</td>
+    </tr> <!-- cierro mi fila 1, para dar inicio a otra fila-->
+
+    <tr>
+        <td>$4000</td>
+        <td>$5000</td>
+        <td>$6000</td>
+        <td>10000</td>
+    </tr> 
+
+
+    <!--
+        Cellspacing: esta propiedad especifica el espacio entre celdas.
+        cellpadding: Esta propiedad especifica el espacio entre bordes de celdas. (interno)
+        Colspan: Esta propiedad especifica el numero de columnas que ocupa una celda.
+        rowspan: Esta propiedad especifica el numero de filas que ocupa una celda.
+    -->
+</table>
+    <br><br>
+
+    <h1 id="extincion">Animales en peligro de exitinsion</h1>
+
+    <table align="center" cellspacing="2" cellpadding="2" border="5" bgcolor="dddddd">\
+
+        <tr> <!--Abro mi etiqueta para iniciar mi fila 1-->
+            <td colspan="4" align="center" bgcolor="666666">
+                <font color="#FFFFFF"><strong>Animales en peligro de extinción</strong></font>
+            </td>
+        </tr> <!--cierro mi etiqueta 1, para dar inicio a otra fila -->
+
+
+        <tr bgcolor="aaaaaa"> <!--inicio fila 2-->
+            <td>Nombre</td>
+            <td align="center">Cabezas</td>
+            <td align="center">Previsión 2010</td>
+            <td align="center">Previsión 2020</td>
+        </tr> <!--Cierro mi fila 2, para dar inicio a otra fila-->
+
+
+        <tr>
+            <td>Ballena</td>
+            <td align="center">6000</td>
+            <td align="center">4000</td>
+            <td align="center">1500</td>
+        </tr>
+        <tr>
+            <td>Oso Pardo</td>
+            <td align="center">50</td>
+            <td rowspan="2" colspan="2" align="center" bgcolor="red">0</td>
+        </tr>
+        <tr>
+            <td>Lince</td>
+            <td align="center">10</td>
+        </tr>
+        <tr>
+            <td>Tigre</td>
+            <td align="center">300</td>
+            <td colspan="2" align="center">210</td>
+        </tr>
+    </table>
+
+    <br>
+    <br>
+
+    <h1> Maquetado de pagina web con una tabla </h1>
+    <table border="2" align="center" width="100%">
+        <tr>
+            <td colspan="2" align="center">NavBar</td>
+        </tr>
+
+        <tr>
+            <td rowspan="2" align="center">Contenido</td>
+            <td align="center">Imagen1</td>
+        </tr>
+
+        <tr>
+            <td align="center">Imagen2</td>
+        </tr>
+
+        <tr>
+            <td colspan="2" align="center">Footer</td>
+        </tr>
+    </table>
+
+
+    <br>
+    <br>
+
+    <h1 id="maqueta"> Ejercicio periodico 1 </h1>
+    <table border="2" align="center" width="100%">
+        <tr>
+            <td colspan="5" align="center">Barra de navegacion</td>
+        </tr>
+
+
+        <tr>
+            <td rowspan="3" colspan="2"   align="center">Texto 1</td>
+            <td rowspan="3" align="center">Texto 2</td>
+            <td  align="center" colspan="2">Texto 3</td>
+        </tr>
+
+        <tr>
+            <td align="center" colspan="2">Texto 4</td>
+        </tr>
+
+        <tr>
+            <td align="center" colspan="2">Texto 5</td>
+        </tr>
+
+        <tr>
+            <td align="center">Imagen 1</td>
+            <td align="center">Imagen 2</td>
+            <td align="center">Imagen 3</td>
+            <td align="center">Imagen 4</td>
+            <td align="center">Imagen 5</td>
+
+        </tr>
+
+
+        <tr>
+            <td colspan="2" align="center">Footer</td>
+            <td colspan="3" align="center">Footer 2</td>
+        </tr>
+    </table>
+
+    
+</body>
+</html>

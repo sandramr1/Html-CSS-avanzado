@@ -1,0 +1,57 @@
+
+
+body{
+    background-color: steelblue;
+}
+
+/*
+.grid{
+    display: grid; Este comando le dice al documento que se trata de una rejilla, especifica que se vea coomo una cuadricula, con el tamaño total de la pantalla
+    display: inline-grid es para que se vea como cuadricula, con el tama;o total de la pantalla definido por nosotros
+    grid-template-columns: repeat(6, 100px);
+    grid-template-rows: minmax(4, 100px);
+    grid-gap: 5px;
+
+
+
+
+}
+
+*/
+.body{
+    width:100px;
+    display: grid;
+    grid-template-areas: "header"
+                         "content sidebar"
+                         "footer";
+    grid-template-columns: repeat (6, 100px);
+    grid-template-rows: repeat(4,100px);
+    grid-gap:5px;
+}
+
+
+.header{
+    background-color: cornsilk;  
+    grid-column-start:1;
+    grid-column-end:6;
+    
+    grid-column: 1/7; 
+}
+
+.content{
+    background-color: rgb(241, 197, 20);  
+    grid-column-start:1;
+    grid-column-end:6;
+}
+
+.footer{
+    background-color: rgb(105, 87, 14);  
+    grid-column-start:1;
+    grid-column-end:7;
+}
+
+.sidebar{
+    background-color: rgb(238, 175, 214);  
+
+}
+

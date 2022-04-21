@@ -1,0 +1,20 @@
+
+
+div{
+    text-align: center;
+}
+
+legend{
+    font-size: 30px;
+}
+
+
+#tablita{
+    border: 1px solid black;
+}
+
+td{
+    border:5px solid black;
+    text-align: center;
+    
+}
